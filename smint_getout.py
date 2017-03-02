@@ -50,17 +50,19 @@ for path_out in dirs_smint:
 
 # In[110]:
 
-best = []
-for experiment, output in expout.iteritems():
-    print 'Choosing best trial in experiment:', experiment
-    # select best score
-    df = pd.DataFrame(expout[experiment])
-    best_out = df.iloc[df.score.argmin()].to_dict()
-    best_out.update({'experiment':experiment})
-    best.append(best_out)
+if __name__ == '__main__':
+
+    best = []
+    for experiment, output in expout.iteritems():
+        print 'Choosing best trial in experiment:', experiment
+        # select best score
+        df = pd.DataFrame(expout[experiment])
+        best_out = df.iloc[df.score.argmin()].to_dict()
+        best_out.update({'experiment':experiment})
+        best.append(best_out)
 
 
-# In[111]:
+    # In[111]:
 
-pd.DataFrame(best)
+    pd.DataFrame(best)
 
