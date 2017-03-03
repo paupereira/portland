@@ -1,0 +1,4 @@
+delx,dely,alpha,theta,kde.bw,kde.lags,horizon,crime.type, pei,pai
+600,600,0,0,500,1,1m,all,0.85,0
+600,600,0,0,500,1,1m,all,0.85,0
+600,600,0,0,500,1,1m,all,0.893,0

@@ -74,3 +74,7 @@ def main(job_id, params):
 	# print 'Anything printed here will end up in the output directory for job #%d' % job_id
 	print params
 	return evaluate(job_id, params)
+<<<<<<< HEAD
+=======
+	
+>>>>>>> mikes/master
